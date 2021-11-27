@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title-el">ToDo List</h1>
+    </header>
+    <main>
+      <form>
+        <div class="input-container">
+          <input
+            type="text"
+            name="todoInput"
+            class="todo-input"
+            id="todo-input-el"
+            placeholder="Enter the name of your task"
+            required
+          />
+          <button class="todo-btn" id="todo-btn-el" type="submit">
+            <span class="material-icons"> add_circle_outline </span>
+          </button>
+        </div>
+
+        <div class="select-container">
+          <select name="todos" class="filter-todo" id="filter-todo-el">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
