@@ -237,3 +237,15 @@ footer {
     margin-top: 1rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .todo-item li {
+    grid-column: 1/9;
+  }
+  .completed-btn {
+    grid-column: 9/11;
+  }
+  .trash-btn {
+    grid-column: 11/13;
+  }
+}
