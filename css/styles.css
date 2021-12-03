@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  /* background-color: var(--background-color); */
   background: linear-gradient(120deg, var(--background-color), var(--background-color-two));
   color: var(--text-color);
   font-family: "Rubik", sans-serif;
@@ -161,6 +160,7 @@ form {
   background-color: var(--other-elements-backgroundcolor);
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+  transition: 0.3s;
 }
 
 .todo-item button {
